@@ -1,0 +1,92 @@
+body {
+  background-color: #100e17;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  left : 10px;
+  margin-left : 50px;
+
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding:40px;
+  margin: 0 auto;
+}
+
+.imageContainer {
+
+  height: 300px;
+  width: 300px;
+  position: absolute;
+
+}
+
+.textContainer {
+
+  top: 285px;
+  left: 5px;
+  position: relative;
+  color: white;
+  padding: 0px;
+
+}
+
+.card {
+  display: flex;
+  height: 380px;
+  width: 300px;
+  margin: 5px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 10px;
+  white-space: normal;
+
+}
+
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+
+.title {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: -7px;
+}
+.subtitle {
+  color: white;
+  font-weight: 300;
+  position: relative;
+  left: 20px;
+  top: 200px;
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+svg {
+  fill: #17141d;
+  stroke-width: 2px;
+}
+
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}

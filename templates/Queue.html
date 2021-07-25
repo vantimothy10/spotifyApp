@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+  <head>
+      <title>Spotify App</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+  <h1> Songs Added to Queue </h1>
+</head>
+<body>
+<div class="container">
+
+  {% for index in indexList %}
+
+  <div class="card">
+    <div class = "imageContainer">
+      <a href= {{queuedLink[index]}}>
+        <img src = {{queuedImage[index]}} alt = "Album Cover" style="width:100%">
+      </a>
+    </div>
+
+    <div class = "textContainer">
+      <h3 >{{queuedSongs[index]}}</h3>
+      <p >{{queuedArtists[index]}}</p>
+    </div>
+
+
+
+  </div>
+
+  {% endfor %}
+
+
+
+</div>
+</body>
+<!-- partial -->
+
+</body>
+</html>
